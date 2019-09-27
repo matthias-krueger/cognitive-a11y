@@ -1,22 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-import styles from './mk-content.module.css';
+import styles from './index.module.css';
 
-export const MkAccessibility = ({content, isAccessibility, isBigger, isSharper, children }) => (
-  <div className={
-      cn({
-          [styles.isBigger]: isAccessibility && isBigger,
-          [styles.isSharper]: isAccessibility && isSharper,
-      })
-  }>
-  {children ? children : isAccessibility ? content.access : content.content}
+export const CogA11y = ({
+  content,
+  children,
+  isAccessibility,
+  isBigger,
+  isSharper
+}) => (
+  <div
+    className={cn({
+      [styles.isBigger]: isAccessibility && isBigger,
+      [styles.isSharper]: isAccessibility && isSharper
+    })}
+  >
+    {children
+      ? children
+      : isAccessibility
+      ? content.simpleText
+      : content.normalText}
   </div>
 );
 
-MkAccessibility.propTypes = {
+CogA11y.propTypes = {
   isBigger: PropTypes.bool,
   isSharper: PropTypes.bool,
-  renderContent: PropTypes.node,
-  renderAccess: PropTypes.node,
-}
+  renderNormalText: PropTypes.node,
+  renderSimpleText: PropTypes.node
+};
