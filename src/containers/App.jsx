@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import 'bulma/css/bulma.css';
-import { CogA11y } from './plugins';
-import sl from './simpleLanguage';
-import a11yIcon from './images/a11y.svg';
+import { CogA11y } from '../plugins';
+import sl from '../data/simpleLanguage';
+import a11yIcon from '../assets/a11y.svg';
+import { CogA11yButton } from '../plugins/cogA11yButton';
 
 function App() {
   const [toggleState, setToggleState] = useState(false);
@@ -35,10 +36,11 @@ function App() {
         <div className="wrapper">
           <CaM isBigger content={sl['welcomeMessage']}></CaM>
           <CaM content={sl['hundMessage']} isSharper></CaM>
-          <CaM content={sl['wtfMes']}></CaM>
+          <CaM content={sl['wtfMes']} isBigger isSharper></CaM>
           <CaM content={sl['NavComponent']} />
           <CaM isBigger>HansPeterAusDerAlm</CaM>
           <CaM>Hnohuntoehun</CaM>
+          <CogA11yButton></CogA11yButton>
         </div>
       </main>
     </>
