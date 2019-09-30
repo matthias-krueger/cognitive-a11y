@@ -39,6 +39,9 @@ function App() {
           <CaM content={sl['wtfMes']} isBigger isSharper></CaM>
           <CaM content={sl['NavComponent']} />
           <CaM isBigger>HansPeterAusDerAlm</CaM>
+          <CaM isImage>
+            <img />
+          </CaM>
           <CaM>Hnohuntoehun</CaM>
           <CogA11yButton></CogA11yButton>
         </div>
