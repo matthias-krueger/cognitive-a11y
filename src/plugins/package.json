@@ -1,5 +1,5 @@
 {
-  "name": "@hicham/acc",
+  "name": "cog-a11y",
   "version": "1.0.1",
   "description": "React plugin for a cognitive accessibility mode.",
   "main": "index.js",
@@ -7,5 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "matthias-krueger",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matthias-krueger/cognitive-a11y.git"
+  }
 }

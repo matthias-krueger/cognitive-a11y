@@ -71,3 +71,9 @@ main {
 .a11y-icon {
   height: 1.5rem;
 }
+
+.site-footer {
+  padding: 1rem 0;
+  background-color: #ccc;
+  color: #fff;
+}

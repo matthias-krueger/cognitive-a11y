@@ -26,7 +26,5 @@ export const CogA11y = ({
 
 CogA11y.propTypes = {
   isBigger: PropTypes.bool,
-  isSharper: PropTypes.bool,
-  renderNormalText: PropTypes.node,
-  renderSimpleText: PropTypes.node
+  isSharper: PropTypes.bool
 };
