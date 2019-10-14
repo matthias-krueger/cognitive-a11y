@@ -1,7 +1,30 @@
-.isBigger {
+.useBigger {
   font-size: 30px;
 }
 
-.isSharper {
+.useSharper {
   color: green;
+}
+
+.useGrayscale img,
+.useGrayscale figure,
+.useGrayscale video {
+  filter: grayscale(50%);
+}
+
+.useFont p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: initial;
+  text-transform: initial;
+  letter-spacing: normal;
+}
+
+.prefers-reduced-transparency {
+}
+
+.prefers-reduced-motion {
+}
+
+.prefers-contrast {
+  filter: grayscale(50%);
 }

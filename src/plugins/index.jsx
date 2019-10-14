@@ -3,17 +3,21 @@ import PropTypes from 'prop-types';
 import cn from 'classnames';
 import styles from './index.module.css';
 
-export const CogA11y = ({
+export const CogA = ({
   content,
   children,
   isAccessibility,
-  isBigger,
-  isSharper
+  useBigger,
+  useSharper,
+  useGrayscale,
+  useFont
 }) => (
   <div
     className={cn({
-      [styles.isBigger]: isAccessibility && isBigger,
-      [styles.isSharper]: isAccessibility && isSharper
+      [styles.useBigger]: isAccessibility && useBigger,
+      [styles.useSharper]: isAccessibility && useSharper,
+      [styles.useGrayscale]: isAccessibility && useGrayscale,
+      [styles.useFont]: isAccessibility && useFont
     })}
   >
     {children
@@ -24,7 +28,9 @@ export const CogA11y = ({
   </div>
 );
 
-CogA11y.propTypes = {
-  isBigger: PropTypes.bool,
-  isSharper: PropTypes.bool
+CogA.propTypes = {
+  useBigger: PropTypes.bool,
+  useSharper: PropTypes.bool,
+  useGrayscale: PropTypes.bool,
+  useFont: PropTypes.bool
 };

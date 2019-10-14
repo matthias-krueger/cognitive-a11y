@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
-import { CogA11y } from '../plugins';
+import { CogA } from '../plugins';
 import sl from '../data/simpleLanguage';
 
 class Footer extends React.Component {
@@ -8,12 +8,12 @@ class Footer extends React.Component {
     return (
       <footer className="site-footer">
         <div className="wrapper">
-          <CogA11y
+          <CogA
             isAccessibility={this.props.toggleState}
             content={sl['footer']}
-            isBigger
-            isSharper
-          ></CogA11y>
+            useBigger
+            useSharper
+          ></CogA>
         </div>
       </footer>
     );

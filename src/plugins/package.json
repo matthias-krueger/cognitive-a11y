@@ -1,15 +1,25 @@
 {
   "name": "cog-a11y",
   "version": "1.0.1",
+  "dependencies": {
+    "classnames": "^2.2.6"
+  },
   "description": "React plugin for a cognitive accessibility mode.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel index.jsx"
   },
   "author": "matthias-krueger",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/matthias-krueger/cognitive-a11y.git"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "babel-cli": "^6.26.0"
   }
 }
