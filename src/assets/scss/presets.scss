@@ -14,8 +14,8 @@
   font-stretch: normal;
   font-weight: 400;
   src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
-    url(./assets/fonts/SourceSansPro-Regular.woff) format('woff'),
-    url(./assets/fonts/SourceSansPro-Regular.woff2) format('woff2');
+    url(../fonts/SourceSansPro-Regular.woff) format('woff'),
+    url(../fonts/SourceSansPro-Regular.woff2) format('woff2');
 }
 
 @font-face {
@@ -24,13 +24,13 @@
   font-stretch: normal;
   font-weight: 600;
   src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'),
-    url(./assets/fonts/SourceSansPro-SemiBold.woff) format('woff'),
-    url(./assets/fonts/SourceSansPro-SemiBold.woff2) format('woff2');
+    url(../fonts/SourceSansPro-SemiBold.woff) format('woff'),
+    url(../fonts/SourceSansPro-SemiBold.woff2) format('woff2');
 }
 
 html,
-#root,
-body {
+body,
+#root {
   height: 100%;
 }
 
@@ -42,39 +42,4 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-main {
-  display: block;
-}
-
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.site-header {
-  padding: 1rem 0;
-  background-color: #eee;
-}
-
-.site-main {
-  padding: 1rem 0;
-}
-
-.a11y-icon {
-  height: 1.5rem;
-}
-
-.site-footer {
-  padding: 1rem 0;
-  background-color: #ccc;
-  color: #fff;
-  text-align: center;
 }

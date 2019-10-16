@@ -1,0 +1,28 @@
+.button {
+  background-color: #1a4780;
+  width: 2rem;
+  height: 1.5rem;
+  padding: 0.2rem;
+  border: 0.05rem solid transparent;
+}
+
+.button:hover {
+  background-color: #1f72df;
+}
+
+.button.active {
+  background-color: #fff;
+  border-color: #18489c;
+}
+
+.button.active:hover {
+  border-color: #1f72df;
+}
+
+.active .iconA11y {
+  fill: #1a4780;
+}
+
+.active:hover .iconA11y {
+  fill: #1f72df;
+}

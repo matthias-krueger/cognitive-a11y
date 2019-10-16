@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cn from 'classnames';
 import styles from './index.module.css';
 
-export const CogA = ({
+export const CogaText = ({
   content,
   children,
   isAccessibility,
@@ -12,8 +12,8 @@ export const CogA = ({
   useGrayscale,
   useFont
 }) => (
-  <div
-    className={cn({
+  <p
+    className={cn('coga-text', {
       [styles.useBigger]: isAccessibility && useBigger,
       [styles.useSharper]: isAccessibility && useSharper,
       [styles.useGrayscale]: isAccessibility && useGrayscale,
@@ -25,12 +25,31 @@ export const CogA = ({
       : isAccessibility
       ? content.simpleText
       : content.normalText}
-  </div>
+  </p>
 );
 
-CogA.propTypes = {
+CogaText.propTypes = {
   useBigger: PropTypes.bool,
   useSharper: PropTypes.bool,
   useGrayscale: PropTypes.bool,
   useFont: PropTypes.bool
+};
+
+export const CogaMotion = ({
+  content,
+  children,
+  isAccessibility,
+  reduceMotion
+}) => (
+  <div
+    className={cn('coga-motion', {
+      [styles.reduceMotion]: isAccessibility && reduceMotion
+    })}
+  >
+    {children ? children : isAccessibility ? content.static : content.motion}
+  </div>
+);
+
+CogaMotion.propTypes = {
+  reduceMotion: PropTypes.bool
 };

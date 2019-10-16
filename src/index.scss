@@ -1,0 +1,69 @@
+@import './assets/scss/mixins.scss';
+@import './assets/scss/presets.scss';
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: block;
+  flex: 1 0 auto;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.site-header {
+  padding: 1rem 0;
+  background-color: #eee;
+  /* position: fixed; */
+  top: 0;
+  right: 0;
+  left: 0;
+
+  h1 {
+    display: inline-block;
+  }
+}
+
+.site-footer {
+  padding: 1rem 0;
+  background-color: #ccc;
+  color: #fff;
+  text-align: center;
+}
+
+.coga-motion {
+  background-image: radial-gradient($purple-light, $purple);
+}
+
+.particles {
+  height: 75vh;
+  width: 100%;
+  margin: 0 auto;
+
+  canvas {
+    opacity: 0.6;
+  }
+}
+
+.avtive-coga-mode {
+  .site-main {
+    .wrapper {
+      max-width: 50rem;
+    }
+  }
+
+  .particles {
+    height: 50vh;
+    max-width: 50rem;
+  }
+}
+
+.intro-text p {
+  text-align: justify;
+}

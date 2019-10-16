@@ -12,19 +12,24 @@
   filter: grayscale(50%);
 }
 
-.useFont p {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.useFont {
+  font-family: 'Times New Roman', serif;
   text-align: initial;
   text-transform: initial;
   letter-spacing: normal;
 }
 
-.prefers-reduced-transparency {
-}
-
-.prefers-reduced-motion {
+.useFont br {
+  margin-bottom: 1rem;
 }
 
 .prefers-contrast {
   filter: grayscale(50%);
+}
+
+.reduceMotion > *,
+.reduceMotion > *::before,
+.reduceMotion > *::after {
+  animation-duration: 0.001s !important;
+  transition-duration: 0.001s !important;
 }
