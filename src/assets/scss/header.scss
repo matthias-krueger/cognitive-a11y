@@ -1,0 +1,71 @@
+.site-header {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+  .wrapper {
+    position: relative;
+  }
+
+  .button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 5rem;
+  }
+
+  .button:hover,
+  .button.active:hover {
+    background-color: $purple;
+
+    .iconA11y {
+      fill: #fff;
+    }
+  }
+
+  .button.active {
+    background-color: $purple-light;
+
+    .iconA11y {
+      fill: #fff;
+    }
+  }
+
+  svg {
+    width: 2rem;
+  }
+}
+
+nav {
+  display: inline-block;
+  margin-right: 5rem;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 1.5rem;
+    background-color: transparent;
+    color: $purple;
+  }
+
+  a:hover {
+    background-color: #eee;
+  }
+
+  .link-active {
+    text-decoration: underline;
+    background-color: #ddd;
+  }
+}

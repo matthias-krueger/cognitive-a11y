@@ -1,2 +1,16 @@
-$purple-light: #9c98de;
-$purple: #7974d2;
+$purple-light: #168db1;
+$purple: #043949;
+
+$section-height: 85vh;
+$coga-section-height: 50vh;
+$coga-wrapper-width: 50rem;
+
+@mixin flexbox-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}

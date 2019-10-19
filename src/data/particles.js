@@ -1,6 +1,9 @@
 import React from 'react';
 import Particles from 'react-particles-js';
 
+// const color = '#106782';
+const color = '#04202b';
+
 const particlesOn = {
   particles: {
     number: {
@@ -11,13 +14,13 @@ const particlesOn = {
       }
     },
     color: {
-      value: '#ffffff'
+      value: color
     },
     shape: {
       type: 'circle',
       stroke: {
         width: 15,
-        color: '#ffffff'
+        color: color
       }
     },
     opacity: {
@@ -43,7 +46,7 @@ const particlesOn = {
     line_linked: {
       enable: true,
       distance: 300,
-      color: '#ffffff',
+      color: color,
       opacity: 0.9,
       width: 1.2
     },

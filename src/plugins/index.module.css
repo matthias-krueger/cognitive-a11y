@@ -7,16 +7,15 @@
 }
 
 .useGrayscale img,
-.useGrayscale figure,
-.useGrayscale video {
+.useGrayscale figure {
   filter: grayscale(50%);
 }
 
 .useFont {
   font-family: 'Times New Roman', serif;
-  text-align: initial;
-  text-transform: initial;
-  letter-spacing: normal;
+  text-align: initial !important;
+  text-transform: initial !important;
+  letter-spacing: normal !important;
 }
 
 .useFont br {

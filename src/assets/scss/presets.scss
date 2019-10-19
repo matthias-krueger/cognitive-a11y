@@ -1,6 +1,6 @@
 *,
-::before,
-::after {
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
@@ -36,10 +36,43 @@ body,
 
 html {
   font-size: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
 }
 
-body {
+body,
+button,
+input,
+select,
+textarea {
   font-family: 'Source Sans Pro', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  font-size: 5vh;
+}
+
+h3 {
+  font-size: 4vh;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+a,
+button {
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+a,
+textarea,
+input,
+button {
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 1rem;
 }

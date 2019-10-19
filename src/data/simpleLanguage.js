@@ -116,8 +116,34 @@ export default {
       </React.Fragment>
     )
   },
+  definition: {
+    normalText: (
+      <React.Fragment>
+        Mehr Forschung ist nötig, um zu erfahren, welche kognitiven
+        Beeinträchtigungen was für Barrieren hervorbringen. Wie wichtig weiteres
+        Handeln ist, verdeutlicht der Umstand, dass viel mehr Nutzer mit
+        kognitiven als mit allen anderen physischen Beeinträchtigungen im Web
+        unterwegs sind. Um auf die Bedürfnisse von Menschen mit kognitiven
+        Beeinträchtigungen reagieren zu können, ist es unumgänglich, eine
+        assistierende Technik anzubieten.
+      </React.Fragment>
+    ),
+    simpleText: (
+      <React.Fragment>
+        Mehr Forschung ist nötig, um zu erfahren, welche kognitiven
+        Beeinträchtigungen was für Barrieren hervorbringen. Wie wichtig weiteres
+        Handeln ist, verdeutlicht der Umstand, dass viel mehr Nutzer mit
+        kognitiven als mit allen anderen physischen Beeinträchtigungen im Web
+        unterwegs sind. Um auf die Bedürfnisse von Menschen mit kognitiven
+        Beeinträchtigungen reagieren zu können, ist es unumgänglich, eine
+        assistierende Technik anzubieten.
+      </React.Fragment>
+    )
+  },
   footer: {
-    normalText: 'Footer Text',
-    simpleText: 'Footer Cog Text'
+    normalText:
+      'Wählen Sie den Button um in den barrierefreien Modus zu wechseln.',
+    simpleText:
+      'Wählen Sie den Button um in den Standard Modus zurück zu wechseln.'
   }
 };

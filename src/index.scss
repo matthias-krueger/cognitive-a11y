@@ -1,14 +1,27 @@
 @import './assets/scss/mixins.scss';
 @import './assets/scss/presets.scss';
+@import './assets/scss/header.scss';
 
 #root {
-  display: flex;
-  flex-direction: column;
+  @include flexbox-column;
 }
 
 main {
-  display: block;
+  @include flexbox-column;
   flex: 1 0 auto;
+  margin-top: 4.3rem;
+
+  section {
+    @include flexbox-column;
+    justify-content: center;
+    position: relative;
+    min-height: $section-height;
+    padding: 1rem 0;
+  }
+
+  p {
+    margin: 2rem 0;
+  }
 }
 
 .wrapper {
@@ -17,53 +30,161 @@ main {
   margin: 0 auto;
 }
 
-.site-header {
-  padding: 1rem 0;
-  background-color: #eee;
-  /* position: fixed; */
-  top: 0;
-  right: 0;
-  left: 0;
-
-  h1 {
-    display: inline-block;
-  }
+.effect-sec {
+  color: #fff;
 }
 
-.site-footer {
-  padding: 1rem 0;
-  background-color: #ccc;
-  color: #fff;
+.default-mode .effect-sec {
   text-align: center;
 }
 
-.coga-motion {
-  background-image: radial-gradient($purple-light, $purple);
+.plain-sec {
+  color: $purple;
 }
 
-.particles {
-  height: 75vh;
-  width: 100%;
-  margin: 0 auto;
+/* ---------- main sections ---------- */
 
-  canvas {
-    opacity: 0.6;
-  }
-}
+.sec-claim {
+  padding: 0;
 
-.avtive-coga-mode {
-  .site-main {
-    .wrapper {
-      max-width: 50rem;
+  .claim {
+    @include flexbox-column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+
+    h2 {
+      padding: 1rem 2rem;
+      color: #fff;
+      text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
     }
   }
 
-  .particles {
-    height: 50vh;
-    max-width: 50rem;
+  .coga-motion {
+    background-image: radial-gradient($purple-light, $purple);
+    // background-color: #106782;
+    // background-color: #168db1;
+
+    .particles {
+      height: $section-height;
+      width: 100%;
+      margin: 0 auto;
+
+      canvas {
+        opacity: 0.6;
+      }
+    }
   }
 }
 
-.intro-text p {
-  text-align: justify;
+.sec-intro {
+  p {
+    text-align: justify;
+  }
+}
+
+.sec-para {
+  padding: 0;
+
+  .parallax-height {
+    @include flexbox-column;
+    justify-content: center;
+    min-height: $section-height;
+    background-color: rgba(4, 57, 73, 0.4);
+  }
+}
+
+.default-mode .sec-para {
+  img {
+    filter: blur(5px) !important;
+  }
+}
+
+.sec-image {
+  background-image: url(./assets/images/office.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  z-index: 3;
+
+  .back-color {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  h3 {
+    color: #fff;
+  }
+}
+
+.default-mode .sec-image .back-color {
+  background-image: radial-gradient(
+    rgba(22, 141, 177, 0.4),
+    rgba(4, 57, 73, 0.4)
+  );
+}
+
+.active-coga-mode .sec-image .back-color {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- active cognitive mode ---------- */
+
+.active-coga-mode {
+  main {
+    section {
+      min-height: auto;
+      min-height: $coga-section-height;
+    }
+
+    .wrapper {
+      max-width: $coga-wrapper-width;
+    }
+  }
+
+  .sec-claim {
+    h2 {
+      background-color: #fff;
+      color: $purple;
+      text-shadow: none;
+      font-size: 3vh;
+    }
+
+    .coga-motion {
+      // filter: grayscale(50%);
+
+      .particles {
+        height: $coga-section-height;
+        max-width: $coga-wrapper-width;
+      }
+    }
+  }
+
+  .sec-para {
+    color: $purple;
+    background-color: #eee;
+
+    img {
+      display: block;
+      width: 60%;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      background-color: rgba(4, 57, 73, 0.4);
+    }
+  }
+}
+
+/* ---------- footer ---------- */
+
+.site-footer {
+  padding: 1rem 0;
+  text-align: center;
+  padding-bottom: 5rem;
 }
