@@ -1,6 +1,6 @@
 {
   "name": "cognitive-a11y",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "classnames": "^2.2.6",

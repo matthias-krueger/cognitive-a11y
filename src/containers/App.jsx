@@ -50,7 +50,7 @@ function App() {
           <div className="wrapper">
             <h2>a11y = Accessibility</h2>
             <p className="definition">
-              a11y ist die Abkürzung für den englischen Begriff accessibility
+              a11y ist die Abkürzung für den englischen Begriff accessibility,
               welcher mit Barrierefreiheit übersetzt wird.
             </p>
             <ModeText
@@ -93,7 +93,7 @@ function App() {
               Als Lösung könnte eine Webseite eine alternative Ansicht (Modus)
               anbieten. Diese richtet sich nach den bekannten Maßnahmen für
               kognitive Barrierefreiheit. Leider können damit nicht alle
-              Bedürfnisse erfüllt werden aber der Zugang ist dennoch
+              Bedürfnisse erfüllt werden, aber der Zugang ist dennoch
               vereinfacht.
               <br />
               Dabei wird der Inhalt der Webseite ohne ablenkende Elemente wie

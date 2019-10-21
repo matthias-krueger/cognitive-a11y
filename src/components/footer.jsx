@@ -7,7 +7,7 @@ class Footer extends React.Component {
         <div className="wrapper">
           <p>
             Matthias Krüger 2019
-            <span>&nbsp;(TH-Brandenburg, Informatik & Medien)</span>
+            <span>&nbsp;(TH Brandenburg, Informatik & Medien)</span>
           </p>
         </div>
       </footer>

@@ -12,9 +12,9 @@ export default {
         unabhängig von individuellen Fähigkeiten und Behinderungen. Das W3C
         widmet sich, Barrieren für alle Menschen mit Behinderungen zu beseitigen
         - einschließlich den Gehörlosen, Blinden, körperlich Herausgeforderten
-        und kognitiv oder visuell Beeinträchtigten.“
+        und kognitiv oder visuell Beeinträchtigten.“&nbsp;
         <a href="https://www.w3.org/Press/WAI-Launch.html">
-          &nbsp;(W3C Press Release, 1997)&nbsp;
+          (W3C Press Release, 1997)
         </a>
         <br />
         Seitdem hat sich in dem Bereich der Web-Barrierefreiheit viel
@@ -33,9 +33,9 @@ export default {
         das maschinelle Lernen weiterentwickelt. Die Direktorin von
         Accessibility Engineering bei Google Eve Andersson sagte in einem
         Artikel dazu: "Die Barrierefreiheitsprobleme von heute sind die
-        Mainstream-Durchbrüche von morgen."
+        Mainstream-Durchbrüche von morgen."&nbsp;
         <a href="https://www.fastcompany.com/3060090/how-designing-for-the-disabled-is-giving-google-an-edge">
-          &nbsp;(John Brownlee, Fast Company, 2016)&nbsp;
+          (John Brownlee, Fast Company, 2016)
         </a>
       </React.Fragment>
     ),
@@ -50,9 +50,9 @@ export default {
         Fähigkeiten und Behinderungen. Das W3C widmet sich, Barrieren für alle
         Menschen mit Behinderungen zu beseitigen - einschließlich den
         Gehörlosen, Blinden, körperlich Herausgeforderten und kognitiv oder
-        visuell Beeinträchtigten.
+        visuell Beeinträchtigten.&nbsp;
         <a href="https://www.w3.org/Press/WAI-Launch.html">
-          &nbsp;(W3C Press Release, 1997)&nbsp;
+          (W3C Press Release, 1997)
         </a>
         <br />
         Seitdem hat sich in dem Bereich der Web-Barrierefreiheit viel
@@ -86,9 +86,9 @@ export default {
         Beeinträchtigungen was für Barrieren hervorbringen. Wie wichtig weiteres
         Handeln ist, verdeutlicht der Umstand, dass viel mehr Nutzer mit
         kognitiven als mit allen anderen physischen Beeinträchtigungen im Web
-        unterwegs sind.
+        unterwegs sind.&nbsp;
         <a href="https://webaim.org/articles/cognitive/cognitive_too_little/">
-          &nbsp;(vgl. e.g., "© WebAIM", 2013)&nbsp;
+          (vgl. e.g., "© WebAIM", 2013)
         </a>
       </React.Fragment>
     ),
@@ -107,9 +107,9 @@ export default {
         Beeinträchtigungen was für Barrieren hervorbringen. Wie wichtig weiteres
         Handeln ist, verdeutlicht der Umstand, dass viel mehr Nutzer mit
         kognitiven als mit allen anderen physischen Beeinträchtigungen im Web
-        unterwegs sind.
+        unterwegs sind.&nbsp;
         <a href="https://webaim.org/articles/cognitive/cognitive_too_little/">
-          &nbsp;(vgl. e.g., "© WebAIM", 2013)&nbsp;
+          (vgl. e.g., "© WebAIM", 2013)
         </a>
       </React.Fragment>
     )
