@@ -7,16 +7,12 @@ export const CogaText = ({
   content,
   children,
   isAccessibility,
-  useBigger,
-  useSharper,
-  useGrayscale,
+  useDefaultLink,
   useFont
 }) => (
   <p
     className={cn('coga-text', {
-      [styles.useBigger]: isAccessibility && useBigger,
-      [styles.useSharper]: isAccessibility && useSharper,
-      [styles.useGrayscale]: isAccessibility && useGrayscale,
+      [styles.useDefaultLink]: isAccessibility && useDefaultLink,
       [styles.useFont]: isAccessibility && useFont
     })}
   >
@@ -29,9 +25,7 @@ export const CogaText = ({
 );
 
 CogaText.propTypes = {
-  useBigger: PropTypes.bool,
-  useSharper: PropTypes.bool,
-  useGrayscale: PropTypes.bool,
+  useDefaultLink: PropTypes.bool,
   useFont: PropTypes.bool
 };
 
@@ -39,11 +33,13 @@ export const CogaMotion = ({
   content,
   children,
   isAccessibility,
+  useGrayscale,
   reduceMotion
 }) => (
   <div
     className={cn('coga-motion', {
-      [styles.reduceMotion]: isAccessibility && reduceMotion
+      [styles.reduceMotion]: isAccessibility && reduceMotion,
+      [styles.useGrayscale]: isAccessibility && useGrayscale
     })}
   >
     {children ? children : isAccessibility ? content.static : content.motion}
@@ -51,5 +47,6 @@ export const CogaMotion = ({
 );
 
 CogaMotion.propTypes = {
-  reduceMotion: PropTypes.bool
+  reduceMotion: PropTypes.bool,
+  useGrayscale: PropTypes.bool
 };

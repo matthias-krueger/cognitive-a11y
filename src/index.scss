@@ -2,6 +2,12 @@
 @import './assets/scss/presets.scss';
 @import './assets/scss/header.scss';
 
+@media screen and (min-width: 70em) {
+  html {
+    font-size: 110%;
+  }
+}
+
 #root {
   @include flexbox-column;
 }
@@ -9,24 +15,32 @@
 main {
   @include flexbox-column;
   flex: 1 0 auto;
-  margin-top: 4.3rem;
+  margin-top: 3.9rem;
 
   section {
     @include flexbox-column;
     justify-content: center;
     position: relative;
     min-height: $section-height;
-    padding: 1rem 0;
+    padding: 8vh 0;
   }
 
   p {
     margin: 2rem 0;
   }
+
+  a {
+    color: $purple-light;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .wrapper {
   width: 90%;
-  max-width: 70rem;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
@@ -34,12 +48,34 @@ main {
   color: #fff;
 }
 
-.default-mode .effect-sec {
-  text-align: center;
+.none-coga-mode {
+  .definition {
+    text-align: center;
+  }
+
+  .effect-sec {
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+
+    p {
+      max-width: 50rem;
+      margin: 0 auto;
+    }
+
+    .parallax-height {
+      @include flexbox-column;
+      justify-content: center;
+      min-height: $section-height;
+      background-color: rgba(4, 57, 73, 0.4);
+    }
+  }
 }
 
 .plain-sec {
   color: $purple;
+  text-align: justify;
 }
 
 /* ---------- main sections ---------- */
@@ -56,7 +92,7 @@ main {
     height: 100%;
     z-index: 10;
 
-    h2 {
+    h1 {
       padding: 1rem 2rem;
       color: #fff;
       text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
@@ -66,8 +102,6 @@ main {
 
   .coga-motion {
     background-image: radial-gradient($purple-light, $purple);
-    // background-color: #106782;
-    // background-color: #168db1;
 
     .particles {
       height: $section-height;
@@ -81,26 +115,28 @@ main {
   }
 }
 
-.sec-intro {
-  p {
-    text-align: justify;
+@media screen and (min-width: 50em) {
+  .brain-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row-reverse;
+    vertical-align: top;
+
+    .coga-text {
+      width: 50%;
+    }
   }
 }
 
-.sec-para {
-  padding: 0;
-
-  .parallax-height {
-    @include flexbox-column;
-    justify-content: center;
-    min-height: $section-height;
-    background-color: rgba(4, 57, 73, 0.4);
-  }
-}
-
-.default-mode .sec-para {
-  img {
-    filter: blur(5px) !important;
+.sec-def {
+  .brain {
+    width: 20%;
+    margin: 0 auto;
+    display: block;
   }
 }
 
@@ -119,23 +155,45 @@ main {
     z-index: -1;
   }
 
-  h3 {
+  h2 {
     color: #fff;
   }
 }
 
-.default-mode .sec-image .back-color {
+.sec-modus {
+  text-align: left;
+
+  @media screen and (max-width: 30em) {
+    h2 {
+      text-align: left;
+    }
+  }
+
+  .arrow-box {
+    position: relative;
+    margin-right: 2rem;
+
+    .coga-text {
+      margin-right: 7rem;
+    }
+
+    .image-arrow {
+      position: absolute;
+      bottom: 0.5rem;
+      right: 0;
+      width: 8vh;
+    }
+  }
+}
+
+.none-coga-mode .sec-image .back-color {
   background-image: radial-gradient(
-    rgba(22, 141, 177, 0.4),
-    rgba(4, 57, 73, 0.4)
+    rgba(22, 141, 177, 0.5),
+    rgba(4, 57, 73, 0.5)
   );
 }
 
-.active-coga-mode .sec-image .back-color {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-/* ---------- active cognitive mode ---------- */
+/* ---------- avtive-coga-mode ---------- */
 
 .active-coga-mode {
   main {
@@ -150,20 +208,16 @@ main {
   }
 
   .sec-claim {
-    h2 {
+    h1 {
       background-color: #fff;
       color: $purple;
       text-shadow: none;
       font-size: 3vh;
     }
 
-    .coga-motion {
-      // filter: grayscale(50%);
-
-      .particles {
-        height: $coga-section-height;
-        max-width: $coga-wrapper-width;
-      }
+    .particles {
+      height: $coga-section-height;
+      max-width: $coga-wrapper-width;
     }
   }
 
@@ -173,11 +227,21 @@ main {
 
     img {
       display: block;
-      width: 60%;
+      width: 50%;
       margin: 0 auto;
-      border: 1px solid #ccc;
       background-color: rgba(4, 57, 73, 0.4);
     }
+  }
+  .sec-image {
+    p {
+      font-weight: bold;
+    }
+    .back-color {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+  .arrow-box .image-arrow {
+    width: 5vh;
   }
 }
 
@@ -185,6 +249,12 @@ main {
 
 .site-footer {
   padding: 1rem 0;
-  text-align: center;
-  padding-bottom: 5rem;
+  font-size: 0.9rem;
+  background-color: $purple;
+  color: #fff;
+  text-align: right;
+}
+
+.active-coga-mode .site-footer .wrapper {
+  max-width: $coga-wrapper-width;
 }

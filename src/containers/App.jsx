@@ -1,25 +1,25 @@
 import React, { useState } from 'react';
-// import 'bulma/css/bulma.css';
 import { CogaText, CogaMotion } from '../plugins/index';
 import sl from '../data/simpleLanguage';
 import motion from '../data/particles';
 import para from '../data/parallax';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import imageBrain from '../assets/images/brain.svg';
+import imageArrow from '../assets/images/arrow.svg';
 
 function App() {
-  // just put that in the root container; App
   const [toggleState, setToggleState] = useState(false);
 
-  // Replace class 'default-mode' with 'avtive-coga-mode' on mode change.
+  // Replace class 'none-coga-mode' with 'avtive-coga-mode' in the html tag on mode change.
   toggleState
     ? document.documentElement.classList.replace(
-        'default-mode',
+        'none-coga-mode',
         'active-coga-mode'
       )
     : document.documentElement.classList.replace(
         'active-coga-mode',
-        'default-mode'
+        'none-coga-mode'
       );
 
   const ModeText = props => (
@@ -38,18 +38,26 @@ function App() {
       <main className="site-main">
         <section className="sec-claim" name="link-claim">
           <div className="claim">
-            <h2>
+            <h1>
               Kognitive Web-Barrierefreiheit
               <br />
               (cognitive-a11y)
-            </h2>
+            </h1>
           </div>
           <ModeMotion content={motion['particles']}></ModeMotion>
         </section>
         <section className="sec-intro plain-sec" name="link-intro">
           <div className="wrapper">
-            <h3>Web-Barrierefreiheit</h3>
-            <ModeText content={sl['introduction']} useFont></ModeText>
+            <h2>a11y = Accessibility</h2>
+            <p className="definition">
+              a11y ist die Abkürzung für den englischen Begriff accessibility
+              welcher mit Barrierefreiheit übersetzt wird.
+            </p>
+            <ModeText
+              content={sl['introduction']}
+              useFont
+              useDefaultLink
+            ></ModeText>
           </div>
         </section>
         <section className="sec-para effect-sec" name="link-para">
@@ -57,15 +65,61 @@ function App() {
         </section>
         <section className="sec-def plain-sec" name="link-def">
           <div className="wrapper">
-            <h3>Kognitive Beeinrächtigung</h3>
-            <ModeText content={sl['definition']} useFont></ModeText>
+            <h2>Kognitive Web-Barrierefreiheit</h2>
+            <p className="definition">
+              Kognitive kommt von Kognition, der Fähigkeit des Gehirns,
+              Informationen zu verarbeiten.
+            </p>
+            <div className="brain-box">
+              <img
+                src={imageBrain}
+                className="brain"
+                alt="brain"
+                width="100%"
+              />
+              <ModeText
+                content={sl['definition']}
+                useFont
+                useDefaultLink
+              ></ModeText>
+            </div>
           </div>
         </section>
         <section className="sec-image effect-sec" name="link-image">
           <div className="back-color" />
           <div className="wrapper">
-            <h3>Visuelle Effekte</h3>
-            <p>Duotone-Effekt</p>
+            <h2>Konzept</h2>
+            <p>
+              Als Lösung könnte eine Webseite eine alternative Ansicht (Modus)
+              anbieten. Diese richtet sich nach den bekannten Maßnahmen für
+              kognitive Barrierefreiheit. Leider können damit nicht alle
+              Bedürfnisse erfüllt werden aber der Zugang ist dennoch
+              vereinfacht.
+              <br />
+              Dabei wird der Inhalt der Webseite ohne ablenkende Elemente wie
+              beispielsweise Animationen dargestellt. Das Problem der
+              überladenen Menüs und unübersichtlichen Navigationsstrukturen,
+              könnte Teil der alternativen Ansicht werden wenn sich diese
+              bewehrt.
+            </p>
+          </div>
+        </section>
+        <section className="sec-modus plain-sec" name="link-modus">
+          <div className="wrapper">
+            <h2>Moduswechsel</h2>
+            <div className="arrow-box">
+              <ModeText content={sl['modus']}></ModeText>
+              <img
+                src={imageArrow}
+                alt="arrow"
+                width="100%"
+                className="image-arrow"
+              />
+            </div>
+            <p>
+              Das Konzept wurde als Bestandteil einer Bachelorarbeit im Bereich
+              Mensch-Computer-Interaktion erarbeitet und umgesetzt.
+            </p>
           </div>
         </section>
       </main>
@@ -75,21 +129,3 @@ function App() {
 }
 
 export default App;
-
-/* <video controls autoplay>
-            <source
-              src="https://www.youtube-nocookie.com/embed/EsocEfMtDdo"
-              // type="video/mp4"
-            />
-          </video> */
-
-/* <iframe
-              title="ADHS"
-              width="560"
-              height="315"
-              src="https://www.youtube-nocookie.com/embed/EsocEfMtDdo"
-              // src="https://www.youtube-nocookie.com/embed/EsocEfMtDdo?autoplay=1"
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe> */

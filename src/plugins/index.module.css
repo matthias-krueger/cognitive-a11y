@@ -1,14 +1,15 @@
-.useBigger {
-  font-size: 30px;
+.useDefaultLink a {
+  text-decoration: underline;
+  color: #00e !important;
 }
 
-.useSharper {
-  color: green;
+.useDefaultLink a:visited {
+  color: #551a8b !important;
 }
 
 .useGrayscale img,
 .useGrayscale figure {
-  filter: grayscale(50%);
+  filter: grayscale(50%) !important;
 }
 
 .useFont {
@@ -19,11 +20,7 @@
 }
 
 .useFont br {
-  margin-bottom: 1rem;
-}
-
-.prefers-contrast {
-  filter: grayscale(50%);
+  margin-bottom: 1rem !important;
 }
 
 .reduceMotion > *,

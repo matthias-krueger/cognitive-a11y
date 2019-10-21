@@ -7,7 +7,7 @@ class Header extends React.Component {
     const fill = '#043949';
 
     return (
-      <header id="testen" className="site-header">
+      <header className="site-header">
         <div className="wrapper">
           <Navigation />
           <button

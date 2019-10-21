@@ -1,6 +1,27 @@
+.none-coga-mode {
+  .site-header {
+    background-color: rgba(255, 255, 255, 0.9);
+
+    nav {
+      a:hover {
+        color: $purple-light;
+      }
+
+      .link-active {
+        color: $purple-light;
+        border-color: $purple-light;
+      }
+
+      a:hover.link-active {
+        color: $purple;
+        border-color: $purple;
+      }
+    }
+  }
+}
+
 .site-header {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.95);
   top: 0;
   right: 0;
   left: 0;
@@ -9,6 +30,34 @@
 
   .wrapper {
     position: relative;
+  }
+
+  nav {
+    display: inline-block;
+    margin-right: 5rem;
+
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      display: block;
+      padding: 1.2rem;
+      font-weight: bold;
+      background-color: transparent;
+      color: $purple;
+      border-bottom: 0.2rem solid transparent;
+    }
+
+    @media screen and (max-width: 43em) {
+      .none-display {
+        display: none;
+      }
+    }
   }
 
   .button {
@@ -37,35 +86,32 @@
   }
 
   svg {
-    width: 2rem;
+    width: 1.7rem;
   }
 }
 
-nav {
-  display: inline-block;
-  margin-right: 5rem;
+.active-coga-mode {
+  .site-header {
+    background-color: #fff;
 
-  ul {
-    list-style-type: none;
-  }
+    .wrapper {
+      max-width: $coga-wrapper-width;
+    }
 
-  li {
-    display: inline-block;
-  }
+    nav {
+      a:hover {
+        background-color: #aaa;
+        color: #fff;
+      }
 
-  a {
-    display: block;
-    padding: 1.5rem;
-    background-color: transparent;
-    color: $purple;
-  }
+      .link-active {
+        background-color: #ccc;
+      }
 
-  a:hover {
-    background-color: #eee;
-  }
-
-  .link-active {
-    text-decoration: underline;
-    background-color: #ddd;
+      a:hover.link-active {
+        background-color: #aaa;
+        color: $purple;
+      }
+    }
   }
 }

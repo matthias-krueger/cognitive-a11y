@@ -1,17 +1,14 @@
 import React from 'react';
-import { CogaText } from '../plugins';
-import sl from '../data/simpleLanguage';
 
 class Footer extends React.Component {
   render() {
     return (
       <footer className="site-footer plain-sec">
         <div className="wrapper">
-          <h3>Moduswechsel</h3>
-          <CogaText
-            isAccessibility={this.props.toggleState}
-            content={sl['footer']}
-          ></CogaText>
+          <p>
+            Matthias Krüger 2019
+            <span>&nbsp;(TH-Brandenburg, Informatik & Medien)</span>
+          </p>
         </div>
       </footer>
     );

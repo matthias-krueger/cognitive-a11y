@@ -1,21 +1,27 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
-import image from '../assets/images/curtain.jpg';
+import image from '../assets/images/fence.jpg';
 
-const contentHeading = <h3>Animationen</h3>;
-const contentParagraph = <p>Parallax Scrolling</p>;
-// const content = (
-//   <React.Fragment>
-//     <h3>Animationen</h3>
-//     <p>Parallax Scrolling</p>
-//   </React.Fragment>
-// );
+const contentHeading = <h2>Barrieren</h2>;
+const contentParagraph = (
+  <p>
+    Neuentwicklungen im Web, zum Beispiel dynamische Inhalte oder interaktivere
+    Schnittstellen durch Technologien wie JavaScript und Ajax, haben neue
+    Barrieren hervorgebracht. Für Menschen mit Beeinträchtigungen der Motorik
+    und der Sinne konnte mit dem Einführen neuer Web-Standards viel bewirkt
+    werden.
+    <br />
+    Um auf die Bedürfnisse von Menschen mit kognitiven Beeinträchtigungen
+    reagieren zu können, ist es unumgänglich, eine assistierende Technik
+    anzubieten.
+  </p>
+);
 
 export default {
   parallax: {
     motion: (
       <Parallax
-        bgImage={require('../assets/images/curtain.jpg')}
+        bgImage={require('../assets/images/fence.jpg')}
         bgImageAlt="background"
         strength={800}
       >
@@ -38,36 +44,3 @@ export default {
     )
   }
 };
-
-// export default {
-//   parallax: {
-//     motion: (
-//       <Parallax
-//         bgImage={require('../assets/images/curtain.jpg')}
-//         bgImageAlt="background"
-//         strength={800}
-//       >
-//         <div className="parallax-height">
-//           <div className="wrapper">
-//             {contentHeading}
-//             {contentParagraph}
-//           </div>
-//         </div>
-//       </Parallax>
-//     ),
-//     static: (
-//       <React.Fragment>
-//         <Parallax
-//           bgImage={require('../assets/images/curtain.jpg')}
-//           bgImageAlt="background"
-//           strength={0}
-//         >
-//           <div className="parallax-height">
-//             <div className="wrapper">{contentHeading}</div>
-//           </div>
-//         </Parallax>
-//         <div className="wrapper">{contentParagraph}</div>
-//       </React.Fragment>
-//     )
-//   }
-// };

@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 
 class Navigation extends React.Component {
   render() {
+    const offset = -68;
     return (
       <nav>
         <ul>
@@ -12,58 +13,76 @@ class Navigation extends React.Component {
               to="link-claim"
               spy={true}
               smooth={true}
-              offset={-69}
+              offset={offset}
               duration={500}
+              title="Start"
             >
               Start
             </Link>
           </li>
-          <li>
+          <li className="none-display">
             <Link
               activeClass="link-active"
               to="link-intro"
               spy={true}
               smooth={true}
-              offset={-69}
+              offset={offset}
               duration={500}
+              title="a11y"
             >
-              Intro
+              a11y
             </Link>
           </li>
-          <li>
+          <li className="none-display">
             <Link
               activeClass="link-active"
               to="link-para"
               spy={true}
               smooth={true}
-              offset={-69}
+              offset={offset}
               duration={500}
+              title="Barrieren"
             >
-              Parallax
+              Barrieren
             </Link>
           </li>
-          <li>
+          <li className="none-display">
             <Link
               activeClass="link-active"
               to="link-def"
               spy={true}
               smooth={true}
-              offset={-69}
+              offset={offset}
               duration={500}
+              title="Kognitiv"
             >
-              Definition
+              Kognitiv
             </Link>
           </li>
-          <li>
+          <li className="none-display">
             <Link
               activeClass="link-active"
               to="link-image"
               spy={true}
               smooth={true}
-              offset={-69}
+              offset={offset}
               duration={500}
+              title="Konzept"
             >
-              Duoton
+              Konzept
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass="link-active"
+              to="link-modus"
+              spy={true}
+              smooth={true}
+              offset={offset}
+              duration={500}
+              title="Modus"
+            >
+              Modus
             </Link>
           </li>
         </ul>
