@@ -122,6 +122,6 @@ export default {
       </React.Fragment>
     ),
     simpleText:
-      'Wählen Sie die Taste erneut, um in die Standard Ansicht zurück zu wechseln.'
+      'Wählen Sie die Taste mit dem Symbole eines Menschen erneut, um in die Standard Ansicht zurück zu wechseln.'
   }
 };

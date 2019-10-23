@@ -116,7 +116,7 @@ main {
 }
 
 @media screen and (min-width: 50em) {
-  .brain-box {
+  .flex-row-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -129,19 +129,20 @@ main {
     -ms-flex-align: center;
     align-items: center;
 
-    .coga-text {
-      width: 50%;
+    p {
+      width: 60%;
     }
   }
 }
 
 .sec-def {
   .coga-text {
-    margin: 0;
+    margin: 1rem 0;
   }
 
-  .brain {
-    width: 20%;
+  .concept-gif {
+    width: 40%;
+    max-width: 15rem;
     margin: 0 auto;
     display: block;
   }
@@ -167,15 +168,30 @@ main {
   }
 }
 
-.sec-modus {
+.none-coga-mode .sec-modus {
   text-align: left;
 
-  @media screen and (max-width: 30em) {
+  @media screen and (max-width: 40em) {
     h2 {
       text-align: left;
     }
   }
+}
 
+.sec-modus {
+  .concept-text {
+    margin: 1rem 0;
+  }
+
+  .brain {
+    width: 50%;
+    max-width: 12rem;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.none-coga-mode {
   .arrow-box {
     position: relative;
     margin-right: 2rem;
@@ -247,12 +263,13 @@ main {
       background-color: rgba(0, 0, 0, 0.6);
     }
   }
-  .arrow-box .image-arrow {
-    width: 5vh;
-  }
 
   .definition {
     text-align: left;
+  }
+
+  .arrow-box .image-arrow {
+    display: none;
   }
 }
 

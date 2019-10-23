@@ -7,6 +7,8 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import imageBrain from '../assets/images/brain.svg';
 import imageArrow from '../assets/images/arrow.svg';
+import gifUser from '../assets/images/user.gif';
+import imageUser from '../assets/images/user.jpg';
 
 function App() {
   const [toggleState, setToggleState] = useState(false);
@@ -70,11 +72,11 @@ function App() {
               Kognitive kommt von Kognition, der Fähigkeit des Gehirns,
               Informationen zu verarbeiten.
             </p>
-            <div className="brain-box">
+            <div className="flex-row-box">
               <img
-                src={imageBrain}
-                className="brain"
-                alt="brain"
+                className="concept-gif"
+                src={toggleState ? imageUser : gifUser}
+                alt="concept"
                 width="100%"
               />
               <ModeText
@@ -115,10 +117,11 @@ function App() {
                 className="image-arrow"
               />
             </div>
-            <p>
+            <p className="concept-text">
               Das Konzept wurde als Bestandteil einer Bachelorarbeit im Bereich
               Mensch-Computer-Interaktion erarbeitet und umgesetzt.
             </p>
+            <img src={imageBrain} className="brain" alt="brain" width="100%" />
           </div>
         </section>
       </main>

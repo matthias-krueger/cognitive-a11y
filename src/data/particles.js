@@ -28,7 +28,7 @@ const particlesOn = {
       random: false,
       anim: {
         enable: false,
-        speed: 5.5,
+        speed: 6,
         opacity_min: 0.1,
         sync: false
       }
@@ -38,7 +38,7 @@ const particlesOn = {
       random: true,
       anim: {
         enable: true,
-        speed: 3,
+        speed: 8,
         size_min: 0.2,
         sync: false
       }
@@ -52,7 +52,7 @@ const particlesOn = {
     },
     move: {
       enable: true,
-      speed: 2.5,
+      speed: 2.8,
       direction: 'none',
       random: false,
       straight: false,

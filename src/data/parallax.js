@@ -23,7 +23,7 @@ export default {
       <Parallax
         bgImage={require('../assets/images/fence.jpg')}
         bgImageAlt="background"
-        strength={800}
+        strength={900}
       >
         <div className="parallax-height">
           <div className="wrapper">
