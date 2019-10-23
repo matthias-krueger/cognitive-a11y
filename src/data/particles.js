@@ -52,7 +52,7 @@ const particlesOn = {
     },
     move: {
       enable: true,
-      speed: 1.5,
+      speed: 2.5,
       direction: 'none',
       random: false,
       straight: false,

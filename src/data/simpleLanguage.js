@@ -117,11 +117,11 @@ export default {
   modus: {
     normalText: (
       <React.Fragment>
-        Um in den Modus für kognitive Barrierefreiheit zu wechseln, betätigen
+        Um in die Ansicht für kognitive Barrierefreiheit zu wechseln, betätigen
         Sie die Taste oben rechts (blaues Symbol eines Menschen).
       </React.Fragment>
     ),
     simpleText:
-      'Wählen Sie die Taste erneut, um in den Standard Modus zurück zu wechseln.'
+      'Wählen Sie die Taste erneut, um in die Standard Ansicht zurück zu wechseln.'
   }
 };

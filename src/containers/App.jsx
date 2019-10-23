@@ -90,11 +90,10 @@ function App() {
           <div className="wrapper">
             <h2>Konzept</h2>
             <p>
-              Als Lösung könnte eine Webseite eine alternative Ansicht (Modus)
-              anbieten. Diese richtet sich nach den bekannten Maßnahmen für
-              kognitive Barrierefreiheit. Leider können damit nicht alle
-              Bedürfnisse erfüllt werden, aber der Zugang ist dennoch
-              vereinfacht.
+              Als Lösung könnte eine Webseite eine alternative Ansicht anbieten.
+              Diese richtet sich nach den bekannten Maßnahmen für kognitive
+              Barrierefreiheit. Leider können damit nicht alle Bedürfnisse
+              erfüllt werden, aber der Zugang ist dennoch vereinfacht.
               <br />
               Dabei wird der Inhalt der Webseite ohne ablenkende Elemente wie
               beispielsweise Animationen dargestellt. Das Problem der
@@ -106,7 +105,7 @@ function App() {
         </section>
         <section className="sec-modus plain-sec" name="link-modus">
           <div className="wrapper">
-            <h2>Moduswechsel</h2>
+            <h2>Ansichtswechsel</h2>
             <div className="arrow-box">
               <ModeText content={sl['modus']}></ModeText>
               <img

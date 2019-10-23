@@ -125,6 +125,9 @@ main {
     -ms-flex-direction: row;
     flex-direction: row-reverse;
     vertical-align: top;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 
     .coga-text {
       width: 50%;
@@ -133,6 +136,10 @@ main {
 }
 
 .sec-def {
+  .coga-text {
+    margin: 0;
+  }
+
   .brain {
     width: 20%;
     margin: 0 auto;

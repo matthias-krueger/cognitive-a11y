@@ -80,9 +80,9 @@ class Navigation extends React.Component {
               smooth={true}
               offset={offset}
               duration={500}
-              title="Modus"
+              title="Ansicht"
             >
-              Modus
+              Ansicht
             </Link>
           </li>
         </ul>

@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  outline: none;
 }
 
 @font-face {
@@ -67,12 +68,6 @@ a,
 button {
   cursor: pointer;
   -webkit-appearance: none;
-}
-
-a,
-textarea,
-input,
-button {
   text-decoration: none;
   background-color: transparent;
   font-size: 1rem;
@@ -80,4 +75,8 @@ button {
 
 span {
   display: inline-block;
+}
+
+p {
+  line-height: 1.4rem;
 }

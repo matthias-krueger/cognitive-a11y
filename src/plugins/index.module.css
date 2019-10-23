@@ -20,7 +20,9 @@
 }
 
 .useFont br {
-  margin-bottom: 1rem !important;
+  content: 'br' !important;
+  display: block !important;
+  margin-bottom: 1.5em !important;
 }
 
 .reduceMotion > *,

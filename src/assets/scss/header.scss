@@ -1,6 +1,6 @@
 .none-coga-mode {
   .site-header {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
 
     nav {
       a:hover {
@@ -100,17 +100,18 @@
 
     nav {
       a:hover {
+        background-color: #ccc;
+        color: $purple;
+      }
+
+      .link-active {
         background-color: #aaa;
         color: #fff;
       }
 
-      .link-active {
-        background-color: #ccc;
-      }
-
       a:hover.link-active {
-        background-color: #aaa;
-        color: $purple;
+        background-color: #ccc;
+        color: #fff;
       }
     }
   }
